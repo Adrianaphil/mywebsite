@@ -3,6 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+
 /*FOOTER*/
 footer {
     color: white; 
@@ -23,7 +24,7 @@ footer {
 }
 
 .contact-icon:hover {
-  color:#c96a6a;
+  color:#f19136;
 }
 /*NAVBAR*/
 .topnav {
@@ -73,7 +74,12 @@ main {
   font-size: 18px;
   font-family:'Georgia';
 }
-
+main a {
+  color:rgb(235, 151, 25);
+}
+main a:hover{
+  color: rgb(151, 46, 46);
+}
 
 .mail-icon {
   color: black;
@@ -118,10 +124,25 @@ main {
 }
 
 .talks {
-  font-size: small;
+  font-size: 16px;
   padding: 30px;
   background-color: rgb(240, 230, 218);
 }
+.slides {
+  background-color:#b34f4f;
+  color: white;
+  border: none;
+  font-size: 17px;
+  box-shadow: 3px 3px black;
+}
+
+.slides:hover {
+  background-color:#df8e16;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /*Activities*/
 .headerActivities{
   color: white; 
@@ -134,6 +155,7 @@ main {
   margin-top: 0px;
   background-size: contain;
 }
+
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
@@ -157,10 +179,18 @@ main {
   }
 }
 
-@media all and (max-width: 500px) {
-  .wrap {
-    flex-direction: column-reverse;    
-  }
+@media screen and (max-width: 500px) {
   main{
     margin: 30px;
+    text-align: left;
+    font-size: 14px;
   }
+  .education {
+    padding: 5px;
+  }
+  .talks {
+    padding: 5px;
+  }
+  .btn {
+    size: small;
+}
