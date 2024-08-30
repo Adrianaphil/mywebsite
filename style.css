@@ -1,3 +1,5 @@
+/*For all*/
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +26,7 @@ body {
   font-size: 18px;
 }
 main {
-  margin: 20px 150px 10px 150px;
+  margin: 20px 100px 10px 200px;
   text-align: justify;
   font-size: 18px;
   font-family:'Calibri';
@@ -36,17 +38,7 @@ main a:hover{
   color: rgb(173, 70, 70);
 }
 
-div.CV{
-  height: 6em;
-  display: flex;
-  align-items: center;
-  justify-content: center }
-div.CV p {
-  margin: 0 }
 
-.mail-icon {
-  color: black;
-}
 .wrap {
   display: flex;
   flex-direction: row;
@@ -54,7 +46,6 @@ div.CV p {
 .row {
   flex-grow:2;
 }
-
 
 /*FOOTER*/
 footer {
@@ -73,6 +64,9 @@ footer {
   align-items: center;
   border-radius: 50%;
   justify-content: center;
+}
+.mail-icon {
+  color: black;
 }
 
 .contact-icon:hover {
@@ -107,18 +101,15 @@ footer {
 
 /*Home*/
 
-/*.headerHome {
-  color: white; 
-  background-image:url("./Pics/moon.JPG");
-  text-align: center; 
-  text-shadow: black 2px 2px;
-  padding: 100px; 
-  font-family:  sans-serif; 
-  line-height: 1.5; 
-  margin-top: 0px;
-  background-size: 80%;
+
+.picHome img {
+  width: 100%; /* Scale the image to fill the container */
+  height: auto; /* Maintain aspect ratio */
+  max-width: 450px; /* Adjust the max-width as needed */
+  max-height: 100%; /* Allow the image to use up all available height */
 }
-*/
+
+/*About me */
 
 .headerResearch {
   color: white; 
@@ -131,35 +122,46 @@ footer {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
-
-
-/*About me */
-
-.education {
-  background-color: #ffecd1;
-  padding: 30px;
-  display: flex;
-} 
 ul {
   list-style-type: none;
 }
 
-
-/*MyResearch*/
-/*.headerResearch {
+/*CV*/
+.headerResearch {
   color: white; 
-  background-color: #b34f4f;
-  text-align: left; 
-  text-shadow: rgb(117, 40, 40) 2px 2px;
-  padding: 30px; 
+  background-image:url("./Pics/sunset.JPG");
+  text-align: center; 
+  text-shadow: black 2px 2px;
+  padding: 80px; 
   font-family:  sans-serif; 
   line-height: 1.5; 
   margin-top: 0px;
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-*/
+div.CV{
+  height: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center }
+div.CV p {
+  margin: 0 }
+
+/*MyResearch*/
+
+.headerResearch {
+  color: white; 
+  background-image:url("./Pics/sunset.JPG");
+  text-align: center; 
+  text-shadow: black 2px 2px;
+  padding: 80px; 
+  font-family:  sans-serif; 
+  line-height: 1.5; 
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .Papers {
   font-size: 16px;
   padding: 30px;
@@ -167,38 +169,25 @@ ul {
 }
 
 
-/*.headerResearch {
-  color: white; 
-  background-image:url("./Pics/Pompidouvert.JPG");
-  text-align: center; 
-  text-shadow: black 2px 2px;
-  padding: 80px; 
-  font-family:  sans-serif; 
-  line-height: 1.5; 
-  margin-top: 0px;
-  background-size: contain;
-}
-*/
-
 /*Activities*/
-/*.headerActivities{
-  color: white; 
-  background-color: #b34f4f;
-  text-align: left; 
-  text-shadow: rgb(117, 40, 40) 2px 2px;;
-  padding: 30px; 
-  font-family:  sans-serif; 
-  line-height: 1.5; 
-  margin-top: 0px;
-  background-size: contain;
+.flex-container {
+  display: flex;
+  align-items: center; /* Vertically center the items */
 }
-*/
 
-.picActivity img{
-  max-width:400px;
-  max-height:450px;    
-
+.pic-container {
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  align-items: center; /* Vertically center the image within the column */
+  max-width: 100%; /* Ensure the image container does not exceed the column width */
 }
+
+.picActivity img {
+  width: 100%; /* Scale the image to fill the container */
+  height: 300px; /* Maintain aspect ratio */
+}
+
+
 
 /*Screen size*/
 
@@ -484,3 +473,9 @@ ul {
     max-width:200px;
     max-height:250px; 
 }
+
+
+.defaultUrl: {
+  value: "", // "AlcarazSanchez_CV_Sep24Masked"
+  kind: OptionKind.VIEWER
+},
