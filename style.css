@@ -38,7 +38,6 @@ main a:hover{
   color: rgb(173, 70, 70);
 }
 
-
 .wrap {
   display: flex;
   flex-direction: row;
@@ -102,11 +101,37 @@ footer {
 /*Home*/
 
 
+.headingMain {
+  color: #722f08;
+  font-weight: italic;
+  font-size: 40px;
+  font-family: sans-serif
+}
+
+.pic-containerHome {
+  display: flex;
+  align-items: flex-start; /* Align the image to the top */
+  justify-content: center; /* Center the image horizontally */
+  height: 100%; /* Ensure the container takes up the full height of the column */
+}
+
 .picHome img {
   width: 100%; /* Scale the image to fill the container */
   height: auto; /* Maintain aspect ratio */
   max-width: 450px; /* Adjust the max-width as needed */
   max-height: 100%; /* Allow the image to use up all available height */
+  border-radius: 8px; /* Optional: adds a slight border radius to the image */
+
+}
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align text to the top */
+  height: 100%;
+}
+.flex-containerHome {
+  display: flex;
+  align-items: flex-start; /* Vertically center the items */
 }
 
 /*About me */
@@ -190,6 +215,13 @@ div.CV p {
 
 
 /*Screen size*/
+
+@media (max-width: 767px) {
+  .pic-containerHome,
+  .Home {
+      margin-bottom: 20px;
+  }
+}
 
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
