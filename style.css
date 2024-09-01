@@ -136,9 +136,9 @@ footer {
 
 /*About me */
 
-.headerResearch {
+.headerAboutMe {
   color: white; 
-  background-image:url("./Pics/sunset.JPG");
+  background-image:url("./Pics/About.JPG");
   text-align: center; 
   text-shadow: black 2px 2px;
   padding: 80px; 
@@ -147,13 +147,14 @@ footer {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
 }
 ul {
   list-style-type: none;
 }
 
 /*CV*/
-.headerResearch {
+.headerCV{
   color: white; 
   background-image:url("./Pics/sunset.JPG");
   text-align: center; 
@@ -177,7 +178,7 @@ div.CV p {
 
 .headerResearch {
   color: white; 
-  background-image:url("./Pics/sunset.JPG");
+  background-image:url("./Pics/Research.JPG");
   text-align: center; 
   text-shadow: black 2px 2px;
   padding: 80px; 
@@ -186,6 +187,8 @@ div.CV p {
   margin-top: 0px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: left;
+ 
 }
 .Papers {
   font-size: 16px;
@@ -451,7 +454,6 @@ div.CV p {
   .btn {
     size: small;
   }
-
   .picHome img{
     max-width:250px;
     max-height:300px;    
